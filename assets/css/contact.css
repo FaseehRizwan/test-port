@@ -1,0 +1,16 @@
+/* === Contact Page Styles === */
+.contact-section {
+  padding: 2rem;
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--accent-1);
+}

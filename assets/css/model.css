@@ -1,0 +1,16 @@
+/* === Model Page Styles === */
+.model-page {
+  padding: 2rem;
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.model-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.model-title {
+  font-size: 2rem;
+  color: var(--accent-1);
+}

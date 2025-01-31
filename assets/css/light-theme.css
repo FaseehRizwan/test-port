@@ -1,0 +1,11 @@
+/* ===== RADICALLY NEW LIGHT THEME ===== */
+[data-theme="light"] {
+  /* Base Colors */
+  --bg-dark: #fafafa;
+  --text-dark: #2d3436;
+  --accent-1: #0984e3;
+  --accent-2: #ff7675;
+  --accent-gradient: linear-gradient(135deg, #0984e3, #74b9ff);
+  --card-bg: #ffffff;
+  --text-light: #e0e0ff;
+}

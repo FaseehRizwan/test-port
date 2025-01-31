@@ -1,0 +1,66 @@
+/* === Global Styles === */
+:root {
+  /* Dark Mode Colors */
+  --bg-dark: #0a0a12;
+  --text-dark: #e0e0ff;
+  --accent-1: #7b61ff;
+  --accent-2: #00ffd1;
+  --accent-gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+  --card-bg-dark: rgba(32, 32, 64, 0.3);
+  --card-bg-light: rgba(255, 255, 255, 0.9);
+  --container-width: 100%;
+  --max-container-width: 1200px;
+}
+
+/* Global Reset */
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+  font-family: var(--body-font);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: var(--header-font);
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.5rem; /* Adjusted for responsiveness */
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem; /* Adjusted for responsiveness */
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem; /* Adjusted for responsiveness */
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem; /* Adjusted for responsiveness */
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem; /* Smaller size for mobile */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Smaller size for mobile */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* Smaller size for mobile */
+  }
+
+  p {
+    font-size: 0.9rem; /* Smaller size for mobile */
+  }
+}

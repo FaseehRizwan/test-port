@@ -1,0 +1,43 @@
+# Site Settings
+title: 3D Portfolio
+description: Professional 3D Model Artist & Game Developer
+baseurl: /
+url: https://FaseehRizwan.github.io/portfolio
+email: mfaseehrizwan@gmail.com
+twitter_username: yourtwitter
+github_username: FaseehRizwan
+
+# Collections
+collections:
+  models:
+    output: true
+    permalink: /models/:path/
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "models"
+    values:
+      layout: "model"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins (for GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files/folders from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
