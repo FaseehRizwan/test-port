@@ -20,7 +20,56 @@ title: Home
   <section class="hero">
     <div class="hero-content">
       <h1>3D Model Artist & Game Developer</h1>
-      <p>Creating immersive experiences through 3D modeling and game development.</p>
+      <p>Creating immersive assets for games, architecture, and film</p>
+      <div class="hero-cta">
+        <a href="#featured" class="btn btn-primary">View Portfolio</a>
+        <a href="{{ '/contact/' | relative_url }}" class="btn btn-secondary">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Models -->
+  <section id="featured" class="featured-models">
+    <h2>Featured Work</h2>
+    <div class="model-grid">
+      {% for model in site.models limit:4 %}
+        <a href="{{ model.url | relative_url }}" class="model-card">
+          <img 
+            src="{{ model.images[0] | relative_url }}" 
+            alt="{{ model.title }}" 
+            loading="lazy"
+          >
+          <div class="model-info">
+            <h3>{{ model.title }}</h3>
+            <span class="model-category">{{ model.category }}</span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>Technical Expertise</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <h3>Modeling & Sculpting</h3>
+        <ul>
+          <li>Blender</li>
+          <li>ZBrush</li>
+          <li>Maya</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🖌️</div>
+        <h3>Texturing & Rendering</h3>
+        <ul>
+          <li>Substance Painter</li>
+          <li>Marmoset</li>
+          <li>Arnold</li>
+        </ul>
+      </div>
     </div>
   </section>
 </main>
