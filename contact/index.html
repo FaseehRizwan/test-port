@@ -20,4 +20,76 @@ title: Contact
     <h1>Contact Me</h1>
     <p class="tagline">Let's collaborate on your next project!</p>
   </div>
+
+  <div class="contact-content">
+    <!-- Contact Form -->
+    <div class="contact-form-container">
+      <h2>Send a Message</h2>
+      <form action="https://formspree.io/f/xnnjvjlw" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <div class="info-card">
+        <h3>Email</h3>
+        <p><a href="mailto:mfaseehrizwan@gmail.com">mfaseehrizwan@gmail.com</a></p>
+      </div>
+      <div class="info-card">
+        <h3>Phone</h3>
+        <p><a href="tel:+923368486031">+92 (336) 848-6031</a></p>
+      </div>
+      <div class="info-card">
+        <h3>Location</h3>
+        <p>Your City, Country</p>
+      </div>
+      <div class="info-card">
+        <h3>Follow Me</h3>
+        <div class="social-links">
+          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://github.com/FaseehRizwan" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://artstation.com/yourusername" target="_blank" rel="noopener">
+            <i class="fab fa-artstation"></i>
+          </a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional: Embed Google Map -->
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.9537353153166!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d2d2b2a1c0b5!2sYour%20Location!5e0!3m2!1sen!2sus!4v1633023222534!5m2!1sen!2sus"
+      width="100%"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
 </section>
